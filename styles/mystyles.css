@@ -1,14 +1,22 @@
 /* Reset all css properties */
 *{
-    padding: 0;
     box-sizing:border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Body & HTML*/
+body, html {
+    background: linear-gradient(135deg,purple,cyan);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 /* title */
-.title{
+.header .title{
     padding: 30px;
-    margin: 100px 0; 
+    padding-top: 30px;
+    box-sizing: border-box;
     font-size: 32px;
     color: #fff;
     text-decoration: none;
@@ -17,23 +25,22 @@
     pointer-events: none;
 }
 
-/* Player turn */
 
-/* Body */
-body{
-    height: 100vh;
-    background: linear-gradient(135deg,purple,cyan);
-}
-/* html */
-html{
-    font-size: 16px;
+/* Player turn */
+.player-turn{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 600;
+    color: whitesmoke;
+    filter: drop-shadow(0 0 5px black);
+    pointer-events: none;
 }
 
 /* wrapper */
 .wrapper{
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%; /* Centers */
+    top: 55%; /* Centers */
     left: 50%;
 }
 
@@ -47,7 +54,6 @@ html{
 }
 
 /* Buttons */
-
 .button-option{
     background: #fff;
     height: 22vmin;
@@ -59,6 +65,7 @@ html{
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     font-family: 'Skranji', sans-serif;
 }
+
 /* restart & hover*/
 #restart {
     font-size: 1.3em;
@@ -78,37 +85,47 @@ html{
     cursor: pointer;
 }
 
-
-  /* Popup & hide */
+/* Popup & hide */
 .popup {
     background: linear-gradient(135deg, #8052ec, #d161ff);
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed; 
+    top: 0; 
+    left: 0; 
     display: flex;
     z-index: 2;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    font-size: 12vmin;
+    font-size: 64px;
 }
+
 .popup.hide {
   display: none;
 }
 
-/* New game */
+/* New game & hover*/
 #new-game {
     font-size: 0.6em;
     padding: 0.5em 1em;
-    background-color: #0a0027;
-    color: #ffffff;
+    background-color: #fff;
+    color: #000;
     border-radius: 0.2em;
     border: none;
   }
+#new-game:hover{
+    background-color: #000;
+    color: #fff;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
 /* Display message */
 #message {
     color: #ffffff;
     text-align: center;
     font-size: 1em;
-  }
+    pointer-events: none;
+}
