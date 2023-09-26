@@ -69,6 +69,14 @@ body, html {
 .button-option:hover{
     background: #cccbcb;
     border: 3px solid #000;
+    cursor: pointer;
+}
+
+.button-option:disabled{
+    pointer-events: none;
+    border: none;
+    background-color: #fff;
+    transition: .3s ease-in;
 }
 
 /* restart & hover*/
