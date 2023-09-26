@@ -3,13 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Favicon & Css importing & Title -->
+    <!-- Favicon & Css importing & Title & Font-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Skranji:wght@700&display=swap">
     <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles/mystyles.css">
-    <title>TicTacToe</title>
+    <title>Tic Tac Toe</title>
 </head>
 <body>
-    
+    <body>
+    <!-- Main tic tac toe containers -->
+
+        <div class="wrapper">
+            <div class="container">
+            <!-- 9 buttons, 3x3 -->
+
+                <button class="button-option">X</button>
+                <button class="button-option">O</button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+                <button class="button-option"></button>
+            </div>
+            <button id="restart">Restart</button>
+        </div>
+        <div class="popup hide">
+            <p id="message">Sample Message</p>
+            <button id="new-game">New Game</button>
+        </div>
 
     <!-- Javascript script -->
     <script src="/scripts/game.js"></script>
