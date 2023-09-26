@@ -6,7 +6,7 @@
 
 /* Body & HTML*/
 body, html {
-    background: linear-gradient(135deg,purple,cyan);
+    background: linear-gradient(-135deg,purple,cyan);
     height: 100%;
     margin: 0;
     padding: 0;
@@ -124,7 +124,7 @@ body, html {
 
 /* Popup & hide */
 .popup {
-    background: linear-gradient(135deg, #8052ec, #d161ff);
+    background: linear-gradient(30deg, #8052ec, #d161ff);
     height: 100%;
     width: 100%;
     position: fixed; 
